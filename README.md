@@ -7,11 +7,14 @@ What it does:
 - Continually caches last frame from every camera
 - When someone asks for camera feed, repeatedly stream that camera's last cached frame
 
+Endpoints:
+- /cam/<int:num>: Streams camera with index num directly to you.
+- /stream: Streams all cameras to you and puts them together on one page.
+
 Requires:
 - Python 3.x
 - OpenCV2: `pip install opencv-python` (And no, no numpy required.)
 - `pip install` any other imports that complain.
 
-Endpoints:
-- /cam/<int:num>: Streams camera with index num directly to you.
-- /stream: Streams all cameras to you and puts them together on one page.
+To run:
+- `python main.py`
